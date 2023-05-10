@@ -24,10 +24,29 @@ header {
 
         ul {
             margin: 0 !important;
-        }
 
-        a {
-            padding: 0 8px;
+            li {
+                position: relative;
+            }
+
+            li::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 3px;
+                /* use height instead of width */
+                background-color: #3979E3;
+                transform: scaleX(0);
+                /* use scaleX instead of scaleY */
+                transition: transform 0.4s ease;
+            }
+
+            li:hover::after {
+                transform: scaleX(1);
+            }
+
         }
 
         input[type="search"] {
@@ -56,6 +75,47 @@ header {
 
 main {
     background-color: #1C1C1C;
+
+    .container {
+        position: relative;
+
+        .text-box {
+            position: absolute;
+            top: -6.5%;
+            background-color: #3979E3;
+
+            h3 {
+                font-weight: 700;
+                color: white;
+                margin: 0;
+                padding: 6px 10px;
+            }
+        }
+    }
+
+    .row {
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+        height: 540px;
+    }
+
+    .card {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+
+        img:hover {
+            border: 1px solid rgb(216, 215, 215);
+        }
+
+        h5 {
+            color: rgb(159, 159, 159);
+        }
+
+        &:hover h5 {
+            color: white;
+        }
+    }
 }
 
 

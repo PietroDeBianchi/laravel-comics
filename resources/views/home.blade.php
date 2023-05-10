@@ -6,28 +6,26 @@
 
 {{-- chaghe the 'contents' of app.blade (also html elements) --}}
 @section('contents')
-{{-- <div class="container artists-list">
-    <div class="row">
-        <ul>
-            @foreach ($seriesList as $SerieItem)
-                <li>
-                    <h3>{{$SerieItem['title']}}</h3>
-                    <div class="artisti">
-                        <h5>Artists</h5>
-                            @foreach ($SerieItem['artists'] as $artist)
-                                <span>{{$artist}},</span>
-                            @endforeach
-                    </div>
-                    <div class="scrittori">
-                        <h5>Scrittori</h5>
-                            @foreach ($SerieItem['writers'] as $writer)
-                                <span>{{$writer}},</span>
-                            @endforeach
-                    </div>
-                </li>
-            @endforeach
-        </ul>
-    </div>
 
-</div> --}}
+<div class="container pt-4">
+    <div class="text-box">
+        <h3 class="text-center">SCROLL TO SEE THE SPECIAL VOLUMES OF THE MONTH!</h3>
+    </div>
+    <div class="row">
+        @foreach ($data as $dataitem)
+            <div class="card m-3" style="width: 18rem;">
+                <img src="{{$dataitem['thumb']}}" class="card-img-top" alt="...">
+                <div class="card-body p-2">
+                    <h5>{{$dataitem['title']}}</h5>
+                    {{-- cycle all writers in $writers
+                    @foreach ($dataitem['writers'] as $writer)
+                        <span class="card-text">{{$writer}}</span>
+                    @endforeach 
+                    --}}
+                </div>
+            </div>
+        @endforeach
+    </div>
+</div>
+
 @endsection

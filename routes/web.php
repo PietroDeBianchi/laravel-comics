@@ -15,21 +15,21 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     //link '$data' to ../confing/db.php
-    $data = config('db');
+    $data = config('db.data');
     //link '$data' to /resources/home.php
     return view('home', compact('data'));
 })->name('home');
 
 Route::get('/characters', function () {
     //link '$data' to ../confing/db.php
-    $data = config('db');
+    $data = config('db.data');
     //link '$data' to /resources/home.php
     return view('characters', compact('data'));
 })->name('characters');
 
 Route::get('/comics', function () {
     //link '$data' to ../confing/db.php
-    $data = config('db');
+    $data = config('db.data');
     //link '$data' to /resources/home.php
     return view('comics', compact('data'));
 })->name('comics');

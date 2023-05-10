@@ -3,17 +3,17 @@ $navbar = ["CHARACTERS", "COMICS", "MOVIES", "TV", "GAMES", "COLLECTIBLES", "VID
 $routePrefix = "/";
 @endphp
 
-<nav class="container d-flex justify-content-between align-items-center py-2">
+<nav class="container d-flex justify-content-between align-items-center mx-2">
     <div>
-        <a href="/"><img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="DC LOGO"></a>
+        <a href="/"><img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="DC LOGO" class="my-1"></a>
     </div>
-    <ul class="d-flex justify-content-around">
+    <ul class="d-flex justify-content-around align-self-stretch">
         @foreach ($navbar as $navItem)
             @php
             $route = $routePrefix . strtolower($navItem);
             @endphp
-            <a href="{{ $route }}">
-                <li class="nav-element">{{ $navItem }}</li>
+            <a href="{{ $route }}" class="d-flex align-items-center mx-3">
+                <li class="nav-element py-4">{{ $navItem }}</li>
             </a>
         @endforeach
     </ul>
