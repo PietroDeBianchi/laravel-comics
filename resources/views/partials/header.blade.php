@@ -18,6 +18,6 @@ $routePrefix = "/";
         @endforeach
     </ul>
     <div>
-        <input type="search" name="search" id="input-search" placeholder="Search 🔍︎">
+        <input type="search" name="search" id="input-search" placeholder="Search  🔍︎">
     </div>
 </nav>

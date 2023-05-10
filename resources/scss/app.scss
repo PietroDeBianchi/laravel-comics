@@ -1,5 +1,17 @@
 @import '~bootstrap/scss/bootstrap';
 
+body {
+    font-family: 'Hind Siliguri', sans-serif;
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
 
 header {
     background-color: white;
@@ -15,12 +27,7 @@ header {
         }
 
         a {
-            text-decoration: none;
             padding: 0 8px;
-        }
-
-        li {
-            list-style: none;
         }
 
         input[type="search"] {
@@ -38,4 +45,55 @@ header {
             text-align: end;
         }
     }
+}
+
+main {
+    background-color: #1C1C1C;
+}
+
+
+footer {
+    background-color: #292C33;
+    background-image: url('../img/footer-bg.jpg');
+    background-size: cover;
+
+    .LinksContainer {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        ul {
+            padding: 0 32px 12px 0;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        a {
+            font-size: 14px;
+            color: #929292;
+
+            &:hover {
+                color: white;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .imgBox {
+        position: relative;
+        height: 500px;
+        width: 500px;
+        overflow-y: hidden;
+
+        img {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
 }
