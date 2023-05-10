@@ -1,1 +1,41 @@
 @import '~bootstrap/scss/bootstrap';
+
+
+header {
+    background-color: white;
+
+    nav {
+
+        img {
+            height: 48px;
+        }
+
+        ul {
+            margin: 0 !important;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 0 8px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        input[type="search"] {
+            border: none;
+            position: relative;
+            border-bottom: 1px solid #3979E3;
+            font-size: 15px;
+            padding-left: 8px;
+            height: 32px;
+            width: 180px;
+            outline: none;
+        }
+
+        input[type="search"]::placeholder {
+            text-align: end;
+        }
+    }
+}

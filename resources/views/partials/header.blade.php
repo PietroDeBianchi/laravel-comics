@@ -3,8 +3,11 @@ $navbar = ["CHARACTERS", "COMICS", "MOVIES", "TV", "GAMES", "COLLECTIBLES", "VID
 $routePrefix = "/";
 @endphp
 
-<nav>
-    <ul class="headerNavbar">
+<nav class="container d-flex justify-content-between align-items-center py-2">
+    <div>
+        <a href="/"><img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="DC LOGO"></a>
+    </div>
+    <ul class="d-flex justify-content-around">
         @foreach ($navbar as $navItem)
             @php
             $route = $routePrefix . strtolower($navItem);
@@ -14,4 +17,7 @@ $routePrefix = "/";
             </a>
         @endforeach
     </ul>
+    <div>
+        <input type="search" name="search" id="input-search" placeholder="Search 🔍︎">
+    </div>
 </nav>
