@@ -10,7 +10,7 @@
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Styles -->
+    <!-- Styles instruction to use Bootstrap for the layout -->
     @vite('resources/js/app.js')
 
 </head>
