@@ -6,5 +6,7 @@
 
 {{-- chaghe the 'contents' of app.blade (also html elements) --}}
 @section('contents')
-<h1>Comics</h1>
+<div id="comics-container">
+    <h3>The Ultimate Comics List!</h3>
+</div>
 @endsection

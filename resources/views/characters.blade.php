@@ -6,5 +6,7 @@
 
 {{-- chaghe the 'contents' of app.blade (also html elements) --}}
 @section('contents')
-<h1>Characters</h1>
+<div id="characters-container">
+    <h3>All Your Favourte Heros!</h3>
+</div>
 @endsection

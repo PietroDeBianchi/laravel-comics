@@ -22,6 +22,11 @@ header {
             height: 48px;
         }
 
+        a {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
         ul {
             margin: 0 !important;
 
@@ -76,43 +81,62 @@ header {
 main {
     background-color: #1C1C1C;
 
-    .container {
-        position: relative;
+    #home-container {
 
-        .text-box {
-            position: absolute;
-            top: -6.5%;
-            background-color: #3979E3;
+        .container {
+            position: relative;
 
-            h3 {
-                font-weight: 700;
+            .text-box {
+                position: absolute;
+                top: -6.5%;
+                background-color: #3979E3;
+
+                h3 {
+                    font-weight: 700;
+                    color: white;
+                    margin: 0;
+                    padding: 6px 10px;
+                }
+            }
+        }
+
+        .row {
+            flex-wrap: nowrap;
+            overflow-y: scroll;
+            height: 540px;
+        }
+
+        .card {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+
+            img:hover {
+                border: 1px solid rgb(216, 215, 215);
+            }
+
+            h5 {
+                color: rgb(159, 159, 159);
+            }
+
+            &:hover h5 {
                 color: white;
-                margin: 0;
-                padding: 6px 10px;
             }
         }
     }
 
-    .row {
-        flex-wrap: nowrap;
-        overflow-y: scroll;
-        height: 540px;
+    #characters-container {
+        min-height: 400px;
+
+        h3 {
+            color: white;
+        }
     }
 
-    .card {
-        background-color: transparent;
-        border: none;
-        padding: 0;
+    #comics-container {
+        min-height: 400px;
 
-        img:hover {
-            border: 1px solid rgb(216, 215, 215);
-        }
-
-        h5 {
-            color: rgb(159, 159, 159);
-        }
-
-        &:hover h5 {
+        h3 {
             color: white;
         }
     }

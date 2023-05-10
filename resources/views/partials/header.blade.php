@@ -3,8 +3,8 @@ $navbar = ["CHARACTERS", "COMICS", "MOVIES", "TV", "GAMES", "COLLECTIBLES", "VID
 $routePrefix = "/";
 @endphp
 
-<nav class="container d-flex justify-content-between align-items-center mx-2">
-    <div>
+<nav class="container d-flex justify-content-between align-items-center">
+    <div class="pt-1">
         <a href="/"><img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="DC LOGO" class="my-1"></a>
     </div>
     <ul class="d-flex justify-content-around align-self-stretch">
