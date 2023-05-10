@@ -45,6 +45,13 @@ header {
             text-align: end;
         }
     }
+
+    .jumbotron {
+        background-image: url('../img/jumbotron.jpg');
+        background-size: cover;
+        height: 360px;
+
+    }
 }
 
 main {

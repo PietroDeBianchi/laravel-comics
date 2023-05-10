@@ -14,13 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    //link '$data' to ../confing/db.php
+    $data = config('db');
+    //link '$data' to /resources/home.php
+    return view('home', compact('data'));
 })->name('home');
 
 Route::get('/characters', function () {
-    return view('characters');
+    //link '$data' to ../confing/db.php
+    $data = config('db');
+    //link '$data' to /resources/home.php
+    return view('characters', compact('data'));
 })->name('characters');
 
 Route::get('/comics', function () {
-    return view('comics');
+    //link '$data' to ../confing/db.php
+    $data = config('db');
+    //link '$data' to /resources/home.php
+    return view('comics', compact('data'));
 })->name('comics');
