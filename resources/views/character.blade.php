@@ -6,5 +6,5 @@
 
 {{-- chaghe the 'contents' of app.blade (also html elements) --}}
 @section('contents')
-
+<h1>Characters</h1>
 @endsection
